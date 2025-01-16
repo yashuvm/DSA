@@ -191,5 +191,43 @@ function longestSubAryWithSum(ary,num){
   return maxLength
   
 }
+/////////
+const result = longestSubAryWithSum([10, -10, 20, 30], 5);
+ console.log(result);
 
+
+function longestSubAryWithSum(ary,num){
+  let sum=0 
+  const hashMap={}
+  let maxLength=0
+  for(let i=0;i<=ary.length-1;i++){
+    sum+=ary[i]
+    //
+    if(sum===num){
+      if(i+1 > maxLength){
+        maxLength = i+1
+      }
+    }
+    //
+    const remaining=sum- num 
+    if(hashMap[remaining]!==undefined){
+      let len= i - hashMap[remaining]
+      if(len > maxLength){
+        maxLength=len
+      }
+      
+      
+    }else{
+      hashMap[sum]=i
+    }
+    
+   
+    
+    
+    
+    
+    
+  }
+  return maxLength
+}
 
