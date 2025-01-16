@@ -216,16 +216,9 @@ function longestSubAryWithSum(ary,num){
         maxLength=len
       }
       
-      
     }else{
       hashMap[sum]=i
     }
-    
-   
-    
-    
-    
-    
     
   }
   return maxLength
