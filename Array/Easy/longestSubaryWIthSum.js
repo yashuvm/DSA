@@ -92,3 +92,57 @@ function max(a, b) {
 
 const result = longestSubAryWithSum([10, 5, 2, 7, 1, 9], 15);
  console.log(result);
+
+
+
+
+////////////////////////////////////////////////
+const result = longestSubAryWithSum([10, -10, 20, 30], 5);
+console.log(result);
+
+
+function longestSubAryWithSum(ary, num) {
+    let longestLength = 0
+    const subAry = []
+    for (let i = 0; i <= ary.length - 1; i++) {
+        for (let j = i; j <= ary.length - 1; j++) {
+            let newSubAry = []
+            for (let k = i; k <= j; k++) {
+                newSubAry.push(ary[k])
+            }
+            subAry.push(newSubAry)
+        }
+    }
+    //
+
+    for (let value of subAry) {
+        let sum_ = 0
+        for (let value2 of value) {
+            sum_ += value2
+        }
+        if (sum_ === num) {
+            if (value.length > longestLength) {
+                longestLength = value.length
+            }
+        }
+    }
+
+
+    if (longestLength === 0) {
+        console.log('No subarray')
+    } else {
+        console.log(longestLength)
+
+    }
+
+
+    //
+}
+
+
+
+
+
+
+
+
