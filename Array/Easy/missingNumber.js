@@ -27,3 +27,19 @@ function missingNumberAry(ary,num){
   }
 }
 //////space used and two for loop  time o(n) space o(n) 
+//
+const result = missingNumberAry([1, 2, 4, 5], 5);
+console.log(result);
+
+
+function missingNumberAry(ary,num){
+   let sum=0 
+   for(let i=0;i<=ary.length-1;i++){
+     sum+=ary[i]
+   }
+   let expressinSum=num*(num+1)/2 
+   let missingEl=expressinSum-sum
+   return missingEl
+}
+//o(n)
+
