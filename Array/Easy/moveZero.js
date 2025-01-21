@@ -25,3 +25,33 @@ const result = moveZeroToEnd([1, 2, 0, 1, 0, 4, 0]);
 console.log(result);
 
 //o(n)
+
+//
+const result = moveZeroToEnd([0,0]);
+console.log(result);
+
+function moveZeroToEnd(ary){
+  let findFirstzeroIndex=-1 
+  //
+  for(let i=0;i<=ary.length-1;i++){
+    if(ary[i]===0){
+      findFirstzeroIndex=i
+      break;
+    }
+  }
+  //
+  if(findFirstzeroIndex!==-1){
+  for(let i=findFirstzeroIndex;i<=ary.length-1;i++){
+    if(ary[i]!==0){
+      //swap with the zero element 
+      ary[findFirstzeroIndex]=ary[i]
+      ary[i]=0 
+      findFirstzeroIndex=i
+    }
+  }  
+  }
+  
+  return ary
+}
+//
+
