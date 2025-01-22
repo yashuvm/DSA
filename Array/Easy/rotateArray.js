@@ -1,4 +1,5 @@
 function rotateAry(ary, n) {
+  //if n  > the size of ary n %=ary.length
   //first reverse last element by n postion
   let i = ary.length - n;
   let j = ary.length - 1;
