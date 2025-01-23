@@ -23,3 +23,10 @@ console.log(result);
 
 //o(n)
 //Kadane’s Algorithm : Maximum Subarray Sum in an Array
+
+
+//
+//for solving the kadans algorithm we have to find all subary then get which sybary sum is maximum o(n^3)
+//for using two loop take sum and maxi then check sum largest o(n^2)
+//
+
