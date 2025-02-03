@@ -3,5 +3,5 @@
 //[7,7,7,7] -> 1 
 
 
-//if we find all subsequce then the complexity is increase 2^e exportionaly increase
-//then we are use dynamic programing by storing the result for each step and use in the further or in future 
+//if we find all subsequce then the complexity is increase 2^e exportionaly increase (brute force and revursive) 
+//then we are use dynamic programing by storing the result for each step and use in the further or in future using memoziation
