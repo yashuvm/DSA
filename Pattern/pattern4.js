@@ -23,4 +23,4 @@ function pattern1(n) {
 4444
 55555
 
-*/``
+*/
