@@ -61,3 +61,5 @@ function missingNum(arr) {
     // Missing number is the XOR of xor1 and xor2
     return xor1 ^ xor2;
 }
+
+//a^a=0.  a^0=a
