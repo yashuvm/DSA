@@ -15,7 +15,7 @@ function moveZeroToEnd(ary) {
             const tmp = ary[i]
             ary[i] = ary[j]
             ary[j] = tmp
-            j++
+            i++
         }
     }
     return ary
@@ -46,7 +46,7 @@ function moveZeroToEnd(ary){
       //swap with the zero element 
       ary[findFirstzeroIndex]=ary[i]
       ary[i]=0 
-      findFirstzeroIndex=i
+      findFirstzeroIndex++
     }
   }  
   }
